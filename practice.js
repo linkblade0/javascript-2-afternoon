@@ -15,7 +15,12 @@
 */
 
 //Code here
+var me = {
+  name: 'Joey',
+  age: 27
+}
 
+alert (me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +31,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Sabaton',
+  food: 'sushi',
+  person: 'Kelsey',
+  book: 'The Hobbit',
+  movie: 'Star Wars: Rogue One',
+  holiday: "St. Patrick's Day",
+}
 
 
 /*
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Aston Martin';
+favoriteThings.brand = 'Vanquish';
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +70,12 @@
 */
 
 //Code here
+var backPack = {}
 
+var item = "firstPocket";
+
+backPack[item] = 'chapstick';
+backPack.color = 'Blue and Tan';
 
 
 /*
@@ -64,7 +83,7 @@
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +93,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +116,7 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis', user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +128,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -118,7 +137,13 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = () => {
+  alert ('hello')
+}
 
+methodCollection.logHello = () => {
+  console.log('hello')
+}
 
 
 /*
@@ -126,7 +151,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello()
+methodCollection.logHello()
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +163,14 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson (name, birthday, ssn) {
+  var person = {
+    'name': name,
+    'birthday': birthday,
+    'ssn': ssn
+  }
+  return person;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +181,12 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard (cardNumber, expirationDate, securityCode) {
+  var CreditCard = {
+    'cardNumber': cardNumber,
+    'ccExp': expirationDate,
+    'ccCode': securityCode
+  }
+  return CreditCard;
+}
 
